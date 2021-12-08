@@ -1,0 +1,9 @@
+
+  <div (click)="onMessageItemClick(item.messageID)" *ngFor="let item of messagesList" class="card">
+    <a [routerLink]="['/' , item.messageID]">
+      {{item.messageID}} <br>
+      {{item.messageTitle}} <br>
+      {{item.jobTitle}}
+    </a>
+  </div>
+

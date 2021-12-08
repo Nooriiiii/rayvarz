@@ -1,0 +1,8 @@
+<div class="row">
+  پیام ها {{shareMessage}}
+</div>
+<app-categories></app-categories>
+
+<div class="row">
+  <app-messages (itemIdOutput)="receiveItemId($event)"></app-messages>
+</div>

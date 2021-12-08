@@ -1,0 +1,7 @@
+<div class="my-2">
+  <select (change)="onCategoryChange()" id="" class="form-select font-sm" [(ngModel)]='categoryId'>
+    <option class="opt" value="">همه پیام ها</option>
+    <option [value]="item.id" class="opt" *ngFor="let item of categories">{{item.displayTitle}}</option>
+  </select>
+</div>
+
